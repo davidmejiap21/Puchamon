@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>Puchamon-Mapa</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+
+    <main>
+
+
+        <section id="jugar">
+            <div>
+                <h1 class="titulo"> Puchamon </h1>
+
+            </div>
+
+
+            <button id="boton-instrucciones">Instrucciones</button>
+            <div>
+                <button id="boton-jugar">Jugar</button>
+            </div>
+
+        </section>
+        <section id="instrucciones">
+            <div id="cuadro-instrucciones">
+                <h1>Como Jugar</h1>
+                <div>
+                    <div>
+                        <p>Cuando selecciones a tu personaje debes recorrer el mapa para elegir quien sera tu
+                            contrincante. </p>
+                        <p> Cuando entres en combate debes tener varias cosas claras: </p>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                El combate es por turnos, para ganar debes lograr conseguir mas puntos que el enemigo al
+                                final de 5 turnos.
+                            </li>
+                            <li>
+                                Existen tres tipos de ataques Fuego, Agua y Planta, podras reconocerlos por el icono que
+                                tienen al lado de su nombre.
+                            </li>
+                            <li>
+                                Para conseguir puntos debes utilizar un ataque de un tipo que le gane al elemento del
+                                ataque
+                                que el enemigo utilice. (cada ataque solo puedes utilizarlo una vez)
+                            </li>
+                        </ol>
+
+                    </div>
+
+
+                </div>
+                <div id="instrucciones-tipos">
+                    <div>
+                        AGUA le gana a FUEGO
+
+                    </div>
+                    <div>
+                        FUEGO le gana a PlANTA
+
+                    </div>
+                    <div>
+                        PLANTA le gana a AGUA
+
+                    </div>
+
+                    <div>
+                        <button id="volver-inicio">Volver</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section id="seleccionar-puchamon">
+            <h1 class="titulo"> Puchamon </h1>
+            <h2>Elige tu puchamon </h2>
+
+            <div class="tarjetas" id="tarjetas-puchamon">
+
+
+            </div>
+
+            <button id="boton-puchamon">Seleccionar</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo"> Recorre el Mapa </h1>
+            <canvas id="mapa">
+
+            </canvas>
+            <button class="boton-movimiento" id="up"   ontouchstart="moverArriba()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">
+                ⬆️</button>
+
+            <div class="botones-movimientos">
+                <button class="boton-movimiento" id="left"  ontouchstart="moverIzquierda()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
+                    onmousedown="moverIzquierda()"> ⬅️</button>
+
+                <button class="boton-movimiento" id="down"  ontouchstart="moverAbajo()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">
+                    ⬇️</button>
+                <button class="boton-movimiento" id="right"  ontouchstart="moverDerecha()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
+                    onmousedown="moverDerecha()"> ➡️</button>
+
+            </div>
+        </section>
+
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo"> Puchamon</h1>
+
+            <h2>Elige tu ataque: </h2>
+            <div id="botones-ataques">
+
+
+            </div>
+            <div id="mensajes">
+                <div id="resultado"> Que inicien los vergazos</div>
+
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Jugar de nuevo</button>
+                </section>
+            </div>
+            <div class="ataques">
+                <div class="cuadros-combate">
+                    <p id="victorias-jugador">0</p>
+                    <div id="imagen-puchamon-jugador"></div>
+                    <p id="puchamon-jugador">Puchamon</p>
+                    <div id="ataques-del-jugador"></div>
+
+                </div>
+                <div class="cuadros-combate">
+                    <p id="victorias-enemigo">0</p>
+                    <div id="imagen-puchamon-enemigo"></div>
+                    <p id="puchamon-enemigo">Puchamon</p>
+                    <div id="ataques-del-enemigo"></div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+    <script src="js/puchamon.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;400&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #DBD8E3;
+    background-image: url(../img/fondo.jpg);
+    background-color: #352F44;
+    user-select: none;
+}
+
+
+#instrucciones{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+     align-items: center;
+    
+     background-image: url(../img/fondo.jpg);
+    
+ }
+ #instrucciones h1{
+    text-align: center;
+ }
+
+ #instrucciones div{
+
+margin: 1%;
+ padding: 10px;
+ }
+ #instrucciones-tipos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+#jugar {
+    justify-content:space-around;
+    flex-direction: column;
+     align-items: center;
+     background-image: url(../img/fondo.jpg);
+    
+ }
+ #jugar h1{
+    font-size: 60px;
+    text-align: center;
+}
+ 
+ #boton-jugar, #boton-instrucciones, #volver-inicio{
+    width: 400px;
+    height: 40px;
+    margin: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #444;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+ }
+
+ #boton-jugar:hover, #boton-instrucciones:hover ,#volver-inicio:hover{
+    background-color: #000000;
+    color: #DBD8E3;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transform: scale(1.15);
+    transition: all 500ms;
+}
+
+
+.titulo {
+    color: #DBD8E3;
+    height: 20px;
+    width: 420px;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: 30px;
+
+}
+
+h2 {
+    color: #DBD8E3;
+    font-size: 20px;
+}
+
+#ver-mapa h1{ 
+    width: 100%;
+    height: 80px;
+}
+#ver-mapa{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ver-mapa button{
+    width: 50px;
+    height: 50px;
+   margin:3px ;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #444;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+}
+
+
+.botones-movimientos{
+    display: flex;
+}
+#seleccionar-puchamon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#seleccionar-ataque, #seleccionar-puchamon ,#jugar, #instrucciones{
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #352F44;
+    height: 750px;
+    border-radius: 10px;
+
+}
+
+
+.cuadros-combate{
+    min-height: 406px;
+}
+.tarjetas {
+    display: flex;
+    max-width: 905px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.tarjeta-de-puchamon {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #DBD8E3;
+    cursor: pointer;
+    border: solid 2px #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.tarjeta-de-puchamon:hover {
+    background-color: #5C5470;
+    color: black;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transform: scale(1.15);
+    transition: all 500ms;
+}
+
+input:checked+label {
+    background-color: #5C5470;
+    color: black;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transform: scale(1.15);
+}
+
+.tarjeta-de-puchamon img {
+    width: 120px;
+    height: 160px;
+
+
+}
+
+
+input {
+    display: none;
+
+}
+
+#boton-puchamon {
+    width: 300px;
+    margin: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #444;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+
+
+}
+
+#boton-puchamon:hover {
+    background-color: #000000;
+    color: #DBD8E3;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transform: scale(1.15);
+    transition: all 500ms;
+}
+
+#seleccionar-ataque {
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#botones-ataques {
+
+    max-width: 605px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+
+
+}
+
+.boton-ataque {
+    width: 180px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: 6px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    text-align: center;
+}
+
+.boton-ataque:hover {
+    background-color: #000000;
+    color: #DBD8E3;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transform: scale(1.15);
+    transition: all 500ms;
+}
+
+#reiniciar {
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar {
+    width: 250px;
+    margin: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: 6px;
+    background-color: #444;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+#boton-reiniciar:hover {
+    background-color: #000000;
+    color: #DBD8E3;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    transform: scale(1.15);
+    transition: all 500ms;
+}
+
+
+
+#mensajes {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 115px;
+    text-align: center;
+    justify-content: center;
+    background-color: #5C5470;
+    border-radius: 6px;
+}
+
+.ataques {
+    display: grid;
+
+    grid-template-columns: 320px 320px;
+    text-align: center;
+}
+
+.ataques img {
+    height: 150px;
+    width: 120px;
+    text-align: center;
+}
+@media(max-width:930px) {
+
+    
+#mensajes {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 115px;
+    text-align: center;
+    justify-content: center;
+    background-color: #5C5470;
+    border-radius: 6px;
+}
+
+    .tarjetas {
+        display: flex;
+        max-width: 935px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+    .tarjeta-de-puchamon {
+        width: 170px;
+        height: 210px;
+        padding: 5px;
+        margin: 10px;
+        
+        border-radius: 5px;
+        background-color: #DBD8E3;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    
+
+    .tarjeta-de-puchamon img {
+        width: 110px;
+        height: 140px;
+
+    }
+
+    
+   
+
+    #seleccionar-ataque,
+    #seleccionar-puchamon,
+    #jugar, #instrucciones{
+        margin: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 800px;
+
+        background-color: #352F44;
+
+    }
+   
+}
+
+@media(max-width:450px) {
+
+    li{
+        padding: 5px;
+     }
+    #instrucciones div{
+
+        margin: 0px;
+         padding: 10px;
+         }
+
+    #jugar h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #boton-jugar{
+        width: 200px;
+        height: 40px;
+     
+        font-size: 20px;
+     }
+     #volver-inicio,  #boton-instrucciones{ 
+        width: 300px;
+        height: 40px;
+     
+        font-size: 20px;
+     }
+
+    
+    
+    #botones-ataques {
+        max-width: 605px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+
+
+    }
+
+    .tarjetas {
+        display: flex;
+        max-width: 905px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+    .tarjeta-de-puchamon {
+        width: 140px;
+        height: 190px;
+        padding: 5px;
+        margin: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #DBD8E3;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .tarjeta-de-puchamon img {
+        width: 100px;
+        height: 130px;
+
+    }
+
+    #mensajes {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+        background-color: #5C5470;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+   
+    .ataques {
+        display: grid;
+        grid-template-columns: 170px 170px;
+        text-align: center;
+        font-size: 10px;
+
+
+    }
+
+    #seleccionar-ataque,
+    #seleccionar-puchamon,
+    #jugar {
+        margin: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        height: 800px;
+
+        background-color: #352F44;
+
+    }
+
+    #instrucciones {
+        
+        margin: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        height: 800px;
+
+        background-color: #352F44;
+
+    }
+    #instrucciones div {
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        width: 350px;;
+       
+        
+    }
+}
+
+
+
